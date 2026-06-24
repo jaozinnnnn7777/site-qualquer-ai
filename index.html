@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Imagens Aleatórias</title>
+
+<style>
+body{
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:black;
+    overflow:hidden;
+}
+
+img{
+    width:100vw;
+    height:100vh;
+    object-fit:contain;
+}
+</style>
+</head>
+<body>
+
+<img id="foto">
+
+<script>
+const imagens = [
+    "https://i.ibb.co/bMdjt6vH/1782265830410.png",
+    "https://i.ibb.co/xSwjT6hb/1782265869663.png",
+    "https://i.ibb.co/NdkzmM86/1782265767645.png"
+];
+
+const sorteada = imagens[Math.floor(Math.random() * imagens.length)];
+
+document.getElementById("foto").src = sorteada;
+</script>
+
+</body>
+</html>
